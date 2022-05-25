@@ -36,6 +36,45 @@ rel="stylesheet" href="styles/jsdoc-default.css"> </head>
     <h3 id="3">Data Model</h3>
     <h3 id="4">User Interface</h3>
     <h3 id="5">Installation Process</h3>
+    
+    
+    <h2>Install</h2>
+    	<p>Install via npm:</p>
+		<pre class="prettyprint source">
+			<code>npm install --save hbbtv-lib</code>
+		</pre>
+		
+	<h2>Usage</h2>
+		<pre class="prettyprint source lang-javascript">
+			<code>var AppMan = require('hbbtv-lib/main/appman');
+			var CSMan = require('hbbtv-lib/cs/cs_manager');
+			var SyncManager = require('hbbtv-lib/cs/sync_manager');
+			var UserAgentParser = require('hbbtv-lib/tools/useragent');
+			</code>
+		</pre>
+		<p>Use the application manager to set application visible and request keys from terminal.</p>
+		<pre class="prettyprint source lang-javascript">
+			<code>AppMan.show();
+				AppMan.addKey(AppMan.COLOR);
+				AppMan.addKey(AppMan.NAVIGATION);
+			</code>
+		</pre>
+		<p>Discover launcher applications. The maximum timeout (1sec defined by the spec)  can be increased for testing purposes.</p>
+		<pre class="prettyprint source lang-javascript">
+			<code>CSMan.once(CSMan.CS_DISCOVERED, on_discovery_finished);
+				CSMan.discover_launchers(10000);
+
+				function on_discovery_finished (devices) {
+					for (x in devices) {
+						log(devices[x].friendly_name);
+					}
+				}
+			</code>
+		</pre>
+    
+    
+    
+    
     <h3 id="6">License</h3>   
     
     
