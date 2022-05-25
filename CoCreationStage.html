@@ -1,5 +1,5 @@
 
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <title>TRACTION Toolset</title>
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <title>TRACTION Toolset - Co-Creation Stage</title>
 <link rel="icon" type="image/x-icon" href="https://www.traction-project.eu/wp-content/uploads/sites/3/2020/02/cropped-Favicon-02-32x32.png">
 
 <script src="scripts/prettify/prettify.js"> </script> <script src="scripts/prettify/lang-css.js"> </script> <!--[if lt IE 9]> <script
@@ -12,19 +12,88 @@ rel="stylesheet" href="styles/jsdoc-default.css"> </head>
 
     <img src="images/Traction-04.png" align="left"/><h1 class="page-title">‏‏‎ ‎‏‏‎ ‎TRACTION Toolset</h1>
 
-    <section> <article><h2>The complete toolset developed for the TRACTION project</h2>
+    <section> <article><h2>Co-Creation Stage</h2>
     
-    <p>The <strong>TRACTION toolset</strong> is a collection of software applications for co-creation, dissemination, streaming, viewing and storing opera content.</p> 
-    <ul> 
-       <li>Co-creation Space is web-based platform which acts as a media repository and collaborative tool for upload, visualisation and communication around media objects</li> 
-       <li>Co-Creation Stage is a web-based tool that supports both live and on-demand media to enable art professionals and individuals from the TRACTION's targeted communities to remotely collaborate to produce engaging and immersive opera shows.</li> 
-       <li>Social VR component is an immersive environment for participants communications after attending a VR opera.</li> 
-       <li>Immersive Adaptive Player is a web-based 360° video player with support to existing and novel adaptive DASH algorithms with audio prioritization, ambisonics support and accessibility features.</li>
-       <li>Pre Recorded Content Adaptation Tool contains a DASH-based 2D web player and a novel audio-prioritised adaptation solution for 2D content streaming.</li>
-       <li>Content Adaptation Tool contains a Web-RTC web player with adaptation of multiple real-time 2D video streams.</li>
-       <li>The Face and Object Recognition Module for the Co-Creation Space contains neural networks capable of generating automatic tags based on face and object recognition for content filtering in the Co-Creation Space</li>
+    <a href="https://github.com/traction-project/CoCreationSpace"><img src="images/github-icon.png" align="left"/></a>
+    
+    </br>
+    </br>
+    
+    <p>The <strong>Co-Creation Stage</strong> is a web-based tool that supports both live and on-demand media to enable art professionals and individuals from the TRACTION's targeted communities to remotely collaborate to produce engaging and immersive opera shows.. This page contains the following aspects about the Co-Creation Stage:</p>
+    </ul>
+       <a href="#1"><li>1. Web Application</li> </a>
+       <a href="#2"><li>2. OrkestraLib</li> </a>
+       <a href="#3"><li>3. Data Model</li> </a>
+       <a href="#4"><li>4. User Interface</li> </a>
+       <a href="#5"><li>5. Installation Process</li> </a>
+       <a href="#6"><li>6. License</li> </a>
     </ul> 
     
+    </br>
+    
+    <h3 id="1">Web Application</h3> 
+    
+    
+    <h3 id="2">OrkestraLib</h3> 
+    
+    
+    <h3 id="3">Data Model</h3>
+    
+    
+    <h3 id="4">User Interface</h3>
+    
+    
+    
+    
+    
+    <h3 id="5">Installation Process</h3>
+    
+    <!--EXAMPLE-->
+    
+    <h4>Install</h4>
+    <p>Install via npm:</p>
+    
+<pre class="prettyprint source"><code>npm install --save hbbtv-lib</code></pre>
+		
+	<h4>Usage</h4>
+		<pre class="prettyprint source lang-javascript">
+<code>var AppMan = require('hbbtv-lib/main/appman');
+var CSMan = require('hbbtv-lib/cs/cs_manager');
+var SyncManager = require('hbbtv-lib/cs/sync_manager');
+var UserAgentParser = require('hbbtv-lib/tools/useragent');
+</code>
+</pre>
+		<p>Use the application manager to set application visible and request keys from terminal.</p>
+		
+<pre class="prettyprint source lang-javascript"><code>AppMan.show();
+AppMan.addKey(AppMan.COLOR);
+AppMan.addKey(AppMan.NAVIGATION);</code>
+</pre>
+		
+		<p>Discover launcher applications. The maximum timeout (1sec defined by the spec)  can be increased for testing purposes.</p>
+<pre class="prettyprint source lang-javascript">
+<code>CSMan.once(CSMan.CS_DISCOVERED, on_discovery_finished);
+CSMan.discover_launchers(10000);
+
+function on_discovery_finished (devices) {
+	for (x in devices) {
+		log(devices[x].friendly_name);
+	}
+}
+</code>
+</pre>
+    
+    
+    
+    
+    <h3 id="6">License</h3>   
+    <p>All code and documentation is licensed by the original authors and contributors under the licenses found in the GitHub repository.</p> 
+    
+       
+    
+    
+    
+    </br></br></br></br>
     
     <p>
     <img src="images/eulogo.png" align="left"/>
@@ -34,8 +103,7 @@ rel="stylesheet" href="styles/jsdoc-default.css"> </head>
     href="https://traction-project.eu/">TRACTION</a> project, co-funded by the European Commission’s <a href="http://ec.europa.eu/programmes/horizon2020/">Horizon 2020</a> 
     research and innovation programme under grant agreement No. 870610.</em>
     
-    <h2>License and authors</h2><p>All code and documentation is licensed by the original authors and contributors under the licenses found in the repositories linked on the right side menu.</p> 
-    <!-- <p>See <a href="AUTHORS">AUTHORS</a> file for a full list of individuals and organisations that have contributed to this code.</p> -->
+
 
 
 </div>
