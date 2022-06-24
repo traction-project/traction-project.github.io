@@ -123,7 +123,7 @@ nav ul {
 }
 
 nav ul a, nav ul a:visited, nav ul a:active {
-    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    /* font-family: Consolas, Monaco, 'Andale Mono', monospace; */
     line-height: 18px;
     color: #4D4E53;
 }
