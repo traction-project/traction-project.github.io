@@ -43,9 +43,7 @@ rel="stylesheet" href="styles/jsdoc-default.css"> </head>
 <p>To use the Pre-Recorded Content Adaptation Algorithm, first you need to create a video element on your html file. Make sure the controls attribute is present. </p>
 
 <pre class="prettyprint source lang-html">
-<xmp><video id="videoPlayer" controls></video>
-</xmp>
-</pre>
+<xmp><video id="videoPlayer" controls></video></xmp></pre>
 
 <p>Add dash.all.min.js to the end of the body. </p>
 
@@ -53,18 +51,14 @@ rel="stylesheet" href="styles/jsdoc-default.css"> </head>
 <xmp><body>
   ...
   <script src="yourPathToDash/dash.all.min.js"></script>
-</body>
-</xmp>
-</pre>
+</body></xmp></pre>
 
 <p>Now, create a MediaPlayer and initialise it. The url attribute should contain the link to the mpd of your video.</p>
 
 <pre class="prettyprint source lang-javascript">
 <code>var url = "https://PathToYourMPD/manifest.mpd";
 var player = dashjs.MediaPlayer().create();
-player.initialize(document.querySelector("#videoPlayer"), url, true);
-</code>
-</pre>
+player.initialize(document.querySelector("#videoPlayer"), url, true);</code></pre>
 
 <p>To make the player use the Pre-Recorded Content Adaptation Algorthim, Labelled as abrPada, you need to update the player's settings, particularly those related to abr.</p>
 
@@ -75,9 +69,7 @@ player.updateSettings({
         'ABRStrategy' : 'abrPada',
         'priority'    : 3,
     }
-});
-</code>
-</pre>
+});</code></pre>
 <p>Note that priority denotes the priority of the stream. It's mainly used for multi-streaming use cases. It has 3 values: high (3), medium (2), and low (1).</p>
 
 <p>Once done, your html file should look like the following:</p>
@@ -115,9 +107,7 @@ player.updateSettings({
             })();
         </script>
     </body>
-</html>
-</xmp>
-</pre>
+</html></xmp></pre>
     
     
     <h3 id="3">Data Collection</h3>
@@ -128,9 +118,9 @@ player.updateSettings({
 <pre class="prettyprint source lang-javascript">
 <code>var bufferLevel = player.getBufferLength('type');
 var throughput  = player.getAverageThroughput('type');
-var quality     = player.getQualityFor('type');
-</code>
+var quality     = player.getQualityFor('type');</code>
 </pre>   
+
 <p>type denotes the segment type (i.e., video, audio). These metrics along with others can help assess the adaptation algorithm.</p>
 
     
