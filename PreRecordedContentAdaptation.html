@@ -120,52 +120,39 @@ player.updateSettings({
 </pre>
     
     
-    <h3 id="3">Installation Process</h3>
+    <h3 id="3">Data Collection</h3>
     
 
-    
-    
-    
-    
-    <!--EXAMPLE-->
-    
-    <h4>Install</h4>
-    <p>Install via npm:</p>
-    
-<pre class="prettyprint source"><code>npm install --save hbbtv-lib</code></pre>
-		
-	<h4>Usage</h4>
-		<pre class="prettyprint source lang-javascript">
-<code>var AppMan = require('hbbtv-lib/main/appman');
-var CSMan = require('hbbtv-lib/cs/cs_manager');
-var SyncManager = require('hbbtv-lib/cs/sync_manager');
-var UserAgentParser = require('hbbtv-lib/tools/useragent');
-</code>
-</pre>
-		<p>Use the application manager to set application visible and request keys from terminal.</p>
-		
-<pre class="prettyprint source lang-javascript"><code>AppMan.show();
-AppMan.addKey(AppMan.COLOR);
-AppMan.addKey(AppMan.NAVIGATION);</code>
-</pre>
-		
-		<p>Discover launcher applications. The maximum timeout (1sec defined by the spec)  can be increased for testing purposes.</p>
+<p>The dash player enables the collection of some QoS metrics such as buffer level, throughput, and selected bitrate.</p>
+
 <pre class="prettyprint source lang-javascript">
-<code>CSMan.once(CSMan.CS_DISCOVERED, on_discovery_finished);
-CSMan.discover_launchers(10000);
-
-function on_discovery_finished (devices) {
-	for (x in devices) {
-		log(devices[x].friendly_name);
-	}
-}
+<code>var bufferLevel = player.getBufferLength('type');
+var throughput  = player.getAverageThroughput('type');
+var quality     = player.getQualityFor('type');
 </code>
-</pre>
+</pre>   
+<p>type denotes the segment type (i.e., video, audio). These metrics along with others can help assess the adaptation algorithm.</p>
+
     
     
-    
-    
-    <h3 id="4">License</h3>   
+    <h3 id="4">Adding/ modifying the Pre-Recorded Content Adaptation Algorithm</h3>   
+   
+   
+   <p>To be able to add or modify PadaRule.js, you need to do the follwoing steps:</p>
+
+<p>1. Install node.js.</p>
+<p>2. Chekout the project repository (git clone https://github.com/traction-project/PreRecordedContentAdaptation.git).</p>
+<p>3. Install dependencies (npm install).</p>
+<p>4. Add or make changes to PadaRule.js.</p>
+<p>5. Build, watch file changes, and launch samples page (npm run start).</p>
+   
+       <h3 id="5">dash.js Documentation</h3>   
+
+   <p>Full <a href="http://cdn.dashjs.org/latest/jsdoc/module-MediaPlayer.html">API Documentation</a> is available describing all public methods, interfaces, properties, and events.</p>
+
+<p>For help, join <a href="https://dashif-slack.azurewebsites.net/">Slack channel</a> or the <a href="https://groups.google.com/d/forum/dashjs">email list</a>.</p>
+   
+   <h3 id="6">License</h3>   
     <p>All code and documentation is licensed by the original authors and contributors under the licenses found in the GitHub repository.</p> 
     
        
