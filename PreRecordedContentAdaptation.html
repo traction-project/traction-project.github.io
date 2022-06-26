@@ -21,21 +21,110 @@ rel="stylesheet" href="styles/jsdoc-default.css"> </head>
     
     <p>The <strong>Pre-Recorded Content Adaptation</strong> solution contains a DASH-based 2D web player and a novel audio-prioritised adaptation solution for 2D content streaming. This page contains the following aspects about the solution:</p>
     </ul>
-       <a href="#1"><li>1. DASH Player</li> </a>
-       <a href="#2"><li>2. Adaptation Algorithms</li> </a>
-       <a href="#3"><li>3. Installation Process</li> </a>
-       <a href="#4"><li>4. License</li> </a>
+       <a href="#1"><li>1. The Algorithm</li> </a>
+       <a href="#2"><li>2. Setup</li> </a>
+       <a href="#3"><li>3. Data Collection</li> </a>
+       <a href="#4"><li>4. Adding/ modifying the Pre-Recorded Content Adaptation Algorithm </li> </a>
+       <a href="#5"><li>5. dash.js Documentation</li> </a>
+       <a href="#6"><li>6. License</li> </a>
     </ul> 
     
     </br>
     
-    <h3 id="1">DASH Player</h3> 
+    <h3 id="1">The Algorithm</h3> 
+    
+    <p> The Pre-Recorded Content Adaptation Algorithm for the TRACTION EU-project is used to select the appropriate bitrates during on-demand content streaming to guarantee viewers’ good QoE. It considers differents parameters such as bandwidth, buffer level, quality variation, and stream priority. It tries to ensure the highest bitrate for audio, a key feature for performing arts pieces (opera in particular), while adapting the video quality given the bandwidth constraints. This is because many studies have shown that ensuring high audio quality can have a positive impact on viewers' QoE.</p>
     
     
-    <h3 id="2">Adaptation Algorithms</h3> 
+    <h3 id="2">Setup</h3> 
+    
+    <p>The TRACTION Pre Recorded Content Adaptation Algorithm is deployed within the dash.js reference player under /PreRecordedContentAdaptation/src/streaming/rules/abr. The file containing the algorithm's logic is PadaRule.js. </p>
+
+<p>To use the Pre-Recorded Content Adaptation Algorithm, first you need to create a video element on your html file. Make sure the controls attribute is present. </p>
+
+<pre class="prettyprint source lang-html">
+<code><video id="videoPlayer" controls></video>
+</code>
+</pre>
+
+<p>Add dash.all.min.js to the end of the body. </p>
+
+<pre class="prettyprint source lang-html">
+<code><body>
+  ...
+  <script src="yourPathToDash/dash.all.min.js"></script>
+</body>
+</code>
+</pre>
+
+<p>Now, create a MediaPlayer and initialise it. The url attribute should contain the link to the mpd of your video.</p>
+
+<pre class="prettyprint source lang-javascript">
+<code>var url = "https://PathToYourMPD/manifest.mpd";
+var player = dashjs.MediaPlayer().create();
+player.initialize(document.querySelector("#videoPlayer"), url, true);
+</code>
+</pre>
+
+<p>To make the player use the Pre-Recorded Content Adaptation Algorthim, Labelled as abrPada, you need to update the player's settings, particularly those related to abr.</p>
+
+<pre class="prettyprint source lang-javascript">
+<code>
+player.updateSettings({
+    'abr':{
+        'ABRStrategy' : 'abrPada',
+        'priority'    : 3,
+    }
+});
+</code>
+</pre>
+<p>Note that priority denotes the priority of the stream. It's mainly used for multi-streaming use cases. It has 3 values: high (3), medium (2), and low (1).</p>
+
+<p>Once done, your html file should look like the following:</p>
+
+
+<pre class="prettyprint source lang-html">
+<code><!doctype html>
+<html>
+    <head>
+        <title>My html</title>
+        <style>
+            video {
+                width: 640px;
+                height: 360px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <video id="videoPlayer" controls></video>
+        </div>
+        <script src="yourPathToDash/dash.all.min.js"></script>
+        <script>
+            (function(){
+                var url = "https://PathToYourMPD/manifest.mpd";
+                var player = dashjs.MediaPlayer().create();
+                player.initialize(document.querySelector("#videoPlayer"), url, true);
+          
+                player.updateSettings({
+                  'abr':{
+                        'ABRStrategy' : 'abrPada',
+                        'priority'    : 3,
+                   }
+                });
+            })();
+        </script>
+    </body>
+</html>
+</code>
+</pre>
     
     
     <h3 id="3">Installation Process</h3>
+    
+
+    
+    
     
     
     <!--EXAMPLE-->
