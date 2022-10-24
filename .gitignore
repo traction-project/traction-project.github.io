@@ -1,0 +1,8 @@
+/public/
+/resources/
+.sass-cache
+.DS_Store
+.vagrant
+.vscode
+*.swp
+.hugo_build.lock
