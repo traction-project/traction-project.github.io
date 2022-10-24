@@ -6,3 +6,11 @@
 .vscode
 *.swp
 .hugo_build.lock
+
+content/co-creation-space
+content/face-and-object-recognition
+content/co-creation-stage
+content/encoding-api
+content/pre-recorded-content-adaptation
+content/live-content-adaptation
+content/immersive-adaptive-player
