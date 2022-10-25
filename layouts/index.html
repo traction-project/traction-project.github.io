@@ -1,13 +1,11 @@
-{{ partial "header.html" }}
-
-<div id="main">
+{{ define "main" }}
+  <div id="main">
     <img src="images/Traction-04.png" align="left"/><h1 class="page-title">TRACTION Toolset</h1>
 
     {{ .Content }}
     <br/><br/>
 
     {{ partial "license.html" . }}
-</div>
-<br class="clear">
-
-{{ partial "footer.html" }}
+  </div>
+  <br class="clear" />
+{{ end }}
