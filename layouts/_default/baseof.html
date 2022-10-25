@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class="topnav" id="myTopnav">
-      <a href="/" class="actives">
+      <a href="{{ absURL "/" }}" class="actives">
         <img src="{{ absURL "images/Traction-02.png" }}">
       </a>
 
@@ -32,21 +32,24 @@
       <div class="dropdown">
         <button class="dropbtn" >Co-Creation Space</button> 
         <div class="dropdown-content">
-          <a href="CoCreationSpace.html">Co-Creation Space</a><a href="FaceObjRecognitionForCCSpace.html">Face and Object Recognition Module</a>
+          <a href="{{ relURL "/co-creation-space" }}">Co-Creation Space</a>
+          <a href="{{ relURL "/face-and-object-recognition" }}">Face and Object Recognition Module</a>
         </div>
       </div>
       <div class="dropdown">
         <button class="dropbtn" >Co-Creation Stage</button>
         <div class="dropdown-content">
-          <a href="CoCreationStage.html">Co-Creation Stage</a><a href="EncodingAPI.html">Encoding API for Co-Creation Stage</a><a href="PreRecordedContentAdaptation.html">Pre-Recorded Content Adaptation</a>
-          <a href="LiveContentAdaptation.html">Live Content Adaptation</a>
+          <a href="{{ relURL "/co-creation-stage" }}">Co-Creation Stage</a>
+          <a href="{{ relURL "/encoding-api" }}">Encoding API for Co-Creation Stage</a>
+          <a href="{{ relURL "/pre-recorded-content-adaptation" }}">Pre-Recorded Content Adaptation</a>
+          <a href="{{ relURL "/live-content-adaptation" }}">Live Content Adaptation</a>
         </div>
       </div>
       <div class="dropdown">
         <button class="dropbtn" >Immersive Experiences</button>
         <div class="dropdown-content">
-          <a href="SocialVR.html">Social VR</a>
-          <a href="ImmersiveAdaptivePlayer.html">Immersive Adaptive Player</a>
+          <a href="{{ relURL "/social-vr" }}">Social VR</a>
+          <a href="{{ relURL "/immersive-adaptive-player" }}">Immersive Adaptive Player</a>
         </div>
       </div>
       <a href="javascript:void(0);" class="icon" onclick="responsiveFunction()">&#9776;</a>
