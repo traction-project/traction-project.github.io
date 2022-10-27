@@ -1,11 +1,10 @@
 {{ define "main" }}
-  <div id="main">
-    <img src="{{ relURL "images/Traction-04.png" }}" align="left"/><h1 class="page-title">TRACTION Toolset</h1>
+  <img src="{{ relURL "images/Traction-04.png" }}" />
+  <h1 class="title is-1">TRACTION Toolset</h1>
 
+  <div class="content">
     {{ .Content }}
-    <br/><br/>
-
-    {{ partial "license.html" . }}
   </div>
-  <br class="clear" />
+
+  {{ partial "license.html" . }}
 {{ end }}
