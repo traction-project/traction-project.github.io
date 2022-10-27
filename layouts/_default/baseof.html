@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="{{ absURL "styles/prettify-tomorrow.css" }}">
-    <link type="text/css" rel="stylesheet" href="{{ absURL "styles/jsdoc-default.css" }}">
+    <link rel="stylesheet" href="{{ (resources.Get "styles/bulma.sass" | resources.ToCSS).Permalink }}" />
   </head>
   <body>
     <div class="topnav" id="myTopnav">
