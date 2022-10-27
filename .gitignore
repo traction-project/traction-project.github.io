@@ -7,10 +7,18 @@
 *.swp
 .hugo_build.lock
 
-content/co-creation-space
-content/face-and-object-recognition
-content/co-creation-stage
-content/encoding-api
-content/pre-recorded-content-adaptation
-content/live-content-adaptation
-content/immersive-adaptive-player
+content/co-creation-space/_index.md
+content/face-and-object-recognition/_index.md
+content/co-creation-stage/_index.md
+content/encoding-api/_index.md
+content/pre-recorded-content-adaptation/_index.md
+content/live-content-adaptation/_index.md
+content/immersive-adaptive-player/_index.md
+
+content/co-creation-space/readme.md
+content/face-and-object-recognition/readme.md
+content/co-creation-stage/readme.md
+content/encoding-api/readme.md
+content/pre-recorded-content-adaptation/readme.md
+content/live-content-adaptation/readme.md
+content/immersive-adaptive-player/readme.md
