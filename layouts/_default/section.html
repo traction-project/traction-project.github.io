@@ -27,13 +27,15 @@
       <div class="block">
         {{ partial "contactlist.html" . }}
       </div>
-      {{ if .Params.license }}
-        <h4 class="title is-4">License</h4>
-        <div class="block">
+      <h4 class="title is-4">License</h4>
+      <div class="block">
+        {{ if .Params.license }}
           All code and documentation is licensed by the original authors and contributors under the
           <a href="{{ index .Params.license 1 }}">{{ index .Params.license 0 }} license</a>.
-        </div>
-      {{ end }}
+        {{ else }}
+          The code is not open source. If you want to know more about it please contact us.
+        {{ end }}
+      </div>
     </div>
     {{ if isset .Params "logo" }}
       <div class="column is-2 is-offset-2">
