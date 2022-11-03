@@ -2,7 +2,7 @@
 
 function fetch_readme() {
   mkdir -p content/${2}
-  curl -L https://github.com/traction-project/${1}/raw/master/README.md | sed -e 's/^# .*$//' > content/${2}/readme.md
+  curl -L https://github.com/traction-project/${1}/raw/master/README.md |egrep -v '^# .*$' |egrep -v "870610" > content/${2}/readme.md
 
   cat content/${2}/{header,readme,footer}.md > content/${2}/_index.md
 }
