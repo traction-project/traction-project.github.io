@@ -26,7 +26,7 @@ The interactive stage offers users the possibility to interact with some
 elements of the opera and apply changes like light colors, seasons, and spaces
 to discover how these changes would affect the atmosphere or the mood.
 
-{{<figure "InteractiveStage.png">}}
+{{<figure "InteractiveStage.jpg">}}
   Users changing light colors and stage elements to change the aesthetics of the opera
 {{</figure>}}
 
@@ -38,7 +38,7 @@ with a changing backgroud. It also gives them the opportunity to send these
 pictures to their real world email addresses by placing them in a virtual
 mailbox.
 
-{{<figure "PhotoBooth.png">}}
+{{<figure "PhotoBooth.jpg">}}
   Users taking pictures with the opera characters and assets in the Photo Booth
 {{</figure>}}
 
@@ -62,7 +62,7 @@ also enables the compression and delivery of the point clouds and the rendering
 on the receiving side. Further details about the infrastructure can be found in
 the award-winning article "[A Pipeline for Multiparty Volumetric Video Conferencing: Transmission of Point Clouds over Low Latency DASH](https://doi.org/10.1145/3339825.3393578)" (Jansen et al., 2020).
 
-{{<figure "user_realworld_vr.png">}}
+{{<figure "user_realworld_vr.jpg">}}
   A user captured in the real world and their representation in the virtual space
 {{</figure>}}
 
