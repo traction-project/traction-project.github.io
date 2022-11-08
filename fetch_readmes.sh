@@ -4,7 +4,7 @@ function fetch_readme() {
   echo "Fetching readme for ${1}..."
 
   mkdir -p content/${2}
-  curl -L https://github.com/traction-project/${1}/raw/master/README.md 2>/dev/null |sed -n -e '/## .*/,$p' > content/${2}/readme.md
+  curl -L https://github.com/traction-project/${1}/raw/master/README.md 2>/dev/null |sed -n -e '/## .*/,$p' |sed -E 's/^(#+ .*)$/#\1/' > content/${2}/readme.md
 
   cat content/${2}/{header,readme,footer}.md > content/${2}/_index.md
 }
