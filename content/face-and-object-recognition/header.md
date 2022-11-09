@@ -7,6 +7,6 @@ license = ["BSD-2-Clause", "https://github.com/traction-project/FaceObjRecogniti
 
 ## Description
 
-## User Documentation
+The Face and Object Recognition Module for Co-Creation Space contains neural networks capable of generating automatic tags based on face and object recognition for content filtering in the Co-Creation Space.
 
 ## Deployment
