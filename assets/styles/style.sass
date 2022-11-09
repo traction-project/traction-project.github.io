@@ -6,8 +6,25 @@
   figure.image img
     width: 80%
 
-
 @media (max-width: 768px)
   figure.image
     margin-left: 0
     margin-right: 0
+
+.youtube-container
+  position: relative
+  float: none
+  width: 60%
+  height: 0
+
+  margin: 0 0 30px 30px
+  padding-bottom: calc(0.65 * 56.25%)
+
+  > iframe
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    left: 0
+    width: 100%
+    height: 100%
