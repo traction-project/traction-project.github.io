@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bash fetch_readmes.sh fetch
+bash build_sections.sh fetch
 
 if [ "$1" = "serve" ]; then
   hugo serve
