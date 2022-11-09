@@ -13,12 +13,15 @@
 
 .youtube-container
   position: relative
-  float: none
-  width: 60%
+  width: 100%
   height: 0
 
   margin: 0 0 30px 30px
-  padding-bottom: calc(0.65 * 56.25%)
+  padding-bottom: calc(0.8 * 56.25%)
+
+  @media (min-width: 769px)
+    width: 60%
+    padding-bottom: calc(0.65 * 56.25%)
 
   > iframe
     position: absolute
