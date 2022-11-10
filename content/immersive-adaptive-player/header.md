@@ -14,4 +14,6 @@ The Immersive Adaptive Player is a web-based 360° video player with support to 
 
 This video introduces the Immersive Adaptive Player and presents instructions for changing accessibility settings and video playback options.
 
+{{< youtube F6wCBM-DLN0 centered >}}
+
 ## Deployment
