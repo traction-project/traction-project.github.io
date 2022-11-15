@@ -37,5 +37,16 @@
         {{ block "main" . }}{{ end }}
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p class="is-size-6 has-text-weight-light">
+          &copy; {{ now.Format "2006" }} <a href="https://traction-project.eu">TRACTION Project</a>.<br/>
+          This site is licensed under the <a href="https://github.com/traction-project/traction-project.github.io/tree/master/LICENSE">BSD license</a>.<br/>
+          <br/>
+          Last update: {{ now.Format "2006-01-02" }}
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
