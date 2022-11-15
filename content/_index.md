@@ -21,3 +21,5 @@ The toolset was employed in three trials: one in inner-city Barcelona, a youth p
 - The Immersive Experiences of TRACTION consist of two main tools: The Social VR component and the Immersive Adaptive Player
   - [Social VR]({{< ref "/social-vr" >}}) component is an immersive environment for participants communications after attending a VR opera;
   - [Immersive Adaptive Player]({{< ref "/immersive-adaptive-player" >}}) is a web-based 360° video player with support to existing and novel adaptive DASH algorithms with audio prioritization, ambisonics support and accessibility features.
+
+For an overview of all the tools developed in the scope of the project please also refer to the project's [Github page](https://github.com/traction-project).
