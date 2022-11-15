@@ -23,7 +23,7 @@ jobs:
         run: bash build.sh
 
       - name: Build page
-        run: hugo --minify
+        run: hugo
 
       - name: Deploy page to branch
         uses: peaceiris/actions-gh-pages@v3
