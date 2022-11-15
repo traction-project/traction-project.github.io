@@ -22,10 +22,21 @@
   <body>
     {{ partial "menu.html" }}
 
-    {{ block "hero" . }}{{ end }}
+    {{ if .IsHome }}
+      {{ block "hero" . }}{{ end }}
+    {{ end }}
 
     <section class="section">
       <div class="container">
+        {{ if not .IsHome }}
+          <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+              <li><a href="{{ relURL "/" }}">Home</a></li>
+              <li class="is-active"><a href="#" aria-current="page">{{ .Title }}</a></li>
+            </ul>
+          </nav>
+        {{ end }}
+
         {{ block "main" . }}{{ end }}
       </div>
     </section>
