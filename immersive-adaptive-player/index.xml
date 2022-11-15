@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Immersive Adaptive Player on TRACTION Toolset</title>
-    <link>http://traction-project.github.io/immersive-adaptive-player/</link>
+    <link>https://traction-project.github.io/immersive-adaptive-player/</link>
     <description>Recent content in Immersive Adaptive Player on TRACTION Toolset</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://traction-project.github.io/immersive-adaptive-player/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://traction-project.github.io/immersive-adaptive-player/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://traction-project.github.io/immersive-adaptive-player/footer/</link>
+      <link>https://traction-project.github.io/immersive-adaptive-player/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://traction-project.github.io/immersive-adaptive-player/footer/</guid>
+      <guid>https://traction-project.github.io/immersive-adaptive-player/footer/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://traction-project.github.io/immersive-adaptive-player/readme/</link>
+      <link>https://traction-project.github.io/immersive-adaptive-player/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://traction-project.github.io/immersive-adaptive-player/readme/</guid>
+      <guid>https://traction-project.github.io/immersive-adaptive-player/readme/</guid>
       <description>Deployment Needed for installation:
 Apache Tomcat How to use run the player with Apache Tomcat (some steps and directories may vary using XAMPP for Windows):
 Run C:\apache-tomcat\bin\startup.bat Open C:\apache-tomcat\webapps folder Copy the ImmersiveAdaptivePlayer folder into webapps folder (make sure the folder is named ImmersiveAdaptivePlayer, with no other characters and respecting the letters in capital) Your directory must be webapps\ImmersiveAdaptivePlayer\all-folders-files. Make sure there is not a subfolder also called ImmersiveAdaptivePlayer. Open a browser and type: &amp;ldquo;your_apache_server_address:portnumber&amp;rdquo;/ImmersiveAdaptivePlayer/ (portnumber is usually 8080 with Tomcat) Built With IMSC_360.</description>
@@ -28,10 +28,10 @@ Run C:\apache-tomcat\bin\startup.bat Open C:\apache-tomcat\webapps folder Copy t
     
     <item>
       <title>Immersive Adaptive Player</title>
-      <link>http://traction-project.github.io/immersive-adaptive-player/header/</link>
+      <link>https://traction-project.github.io/immersive-adaptive-player/header/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://traction-project.github.io/immersive-adaptive-player/header/</guid>
+      <guid>https://traction-project.github.io/immersive-adaptive-player/header/</guid>
       <description>Description The Immersive Adaptive Player is a web-based 360° video player with support to existing and novel adaptive DASH algorithms with audio prioritization, ambisonics support and accessibility features. This player extends the ImAc Player developed in the EU H2020 ImAc project.
 User Documentation This video introduces the Immersive Adaptive Player and presents instructions for changing accessibility settings and video playback options.
 Deployment </description>

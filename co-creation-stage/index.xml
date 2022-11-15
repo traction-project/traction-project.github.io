@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Co-Creation Stage on TRACTION Toolset</title>
-    <link>http://traction-project.github.io/co-creation-stage/</link>
+    <link>https://traction-project.github.io/co-creation-stage/</link>
     <description>Recent content in Co-Creation Stage on TRACTION Toolset</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://traction-project.github.io/co-creation-stage/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://traction-project.github.io/co-creation-stage/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://traction-project.github.io/co-creation-stage/footer/</link>
+      <link>https://traction-project.github.io/co-creation-stage/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://traction-project.github.io/co-creation-stage/footer/</guid>
+      <guid>https://traction-project.github.io/co-creation-stage/footer/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://traction-project.github.io/co-creation-stage/readme/</link>
+      <link>https://traction-project.github.io/co-creation-stage/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://traction-project.github.io/co-creation-stage/readme/</guid>
+      <guid>https://traction-project.github.io/co-creation-stage/readme/</guid>
       <description>Dependencies The deployment of the tool requires to have installed:
 Nodejs v14.18.1 Npm Docker-ce Docker-compose (Optional) AWS Account Ports The CoCreationStage is composed of many services that use the following ports:
 443 (reverse proxy) 80 8080 (motion) 8082 (orkestra-server) 3001 (encoding api) 8089,8989 (janus, webrtc gateway) Deployment Clone the project repository:
@@ -29,10 +29,10 @@ git clone git@github.com:traction-project/CoCreationStage.git cd CoCreationStage
     
     <item>
       <title>Co-Creation Stage</title>
-      <link>http://traction-project.github.io/co-creation-stage/header/</link>
+      <link>https://traction-project.github.io/co-creation-stage/header/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://traction-project.github.io/co-creation-stage/header/</guid>
+      <guid>https://traction-project.github.io/co-creation-stage/header/</guid>
       <description>Description The Co-Creation Stage is a web-based tool that supports both live and on-demand media to enable art professionals and individuals from the TRACTION&amp;rsquo;s targeted communities to remotely collaborate and to produce engaging and immersive opera shows. The video below contains an introduction to the Co-Creation Stage:
 User Documentation Tutorial 1 This video presents instructions to create a template for a show managed by the Co-Creation Stage, specifying and configuring the needed locations, devices, users and contents for the show.</description>
     </item>

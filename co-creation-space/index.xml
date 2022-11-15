@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Co-Creation Space on TRACTION Toolset</title>
-    <link>http://traction-project.github.io/co-creation-space/</link>
+    <link>https://traction-project.github.io/co-creation-space/</link>
     <description>Recent content in Co-Creation Space on TRACTION Toolset</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://traction-project.github.io/co-creation-space/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://traction-project.github.io/co-creation-space/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://traction-project.github.io/co-creation-space/footer/</link>
+      <link>https://traction-project.github.io/co-creation-space/footer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://traction-project.github.io/co-creation-space/footer/</guid>
+      <guid>https://traction-project.github.io/co-creation-space/footer/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>http://traction-project.github.io/co-creation-space/readme/</link>
+      <link>https://traction-project.github.io/co-creation-space/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://traction-project.github.io/co-creation-space/readme/</guid>
+      <guid>https://traction-project.github.io/co-creation-space/readme/</guid>
       <description>Prerequisites The app uses the yarn version 1 (https://classic.yarnpkg.com), so make sure to install it before you get going. Moreover, make sure to install Docker and docker-compose (usually comes packaged with Docker) for running the system on your local machine
 Tunnelling The application makes use of Amazon SNS (Simple Notification Service) to be notified about asynchronous events (such as status updates about video processing). In order to receive messages, the application needs to subscribe to the SNS channel using a public names where it is reachable.</description>
     </item>
     
     <item>
       <title>Co-Creation Space</title>
-      <link>http://traction-project.github.io/co-creation-space/header/</link>
+      <link>https://traction-project.github.io/co-creation-space/header/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://traction-project.github.io/co-creation-space/header/</guid>
+      <guid>https://traction-project.github.io/co-creation-space/header/</guid>
       <description>Description The Co-Creation Space is a web-based platform which acts as a media repository and collaborative tool for upload, visualisation and communication around media objects. This video contains an introduction to the Co-Creation Space:
 User Documentation Tutorial 1 This video presents instructions for signing up, editing profiles (e-mail, password, language, groups and topics of interest), searching and filtering content, creating, reacting, commenting and liking posts, and finally, viewing notifications.
 Tutorial 2 This video presents instructions for adding posts to the favourites list, following other users, creating media collections, drafting posts, highlighting videos/images and drawing on images signing up, editing colour themes and group permissions.</description>
