@@ -39,4 +39,9 @@
   background-color: #F9F9F9
 
 .navbar-link.is-active, .navbar-item.is-active
-  background-color: #f17917!important
+  background-color: #f17917
+  color: inherit
+
+.navbar-link:not(.is-arrowless)::after
+  color: inherit
+  border-color: inherit
