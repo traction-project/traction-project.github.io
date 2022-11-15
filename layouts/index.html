@@ -1,9 +1,21 @@
-{{ define "main" }}
-  <div class="is-flex is-align-items-center is-flex-wrap-wrap mb-4">
-    <img class="mr-2" src="{{ relURL "images/Traction-04.png" }}" />
-    <h1 class="title is-1">TRACTION Toolset</h1>
-  </div>
+{{ define "hero" }}
+  <section class="hero is-small is-hero-background">
+    <div class="hero-body">
+      <section class="section">
+        <div class="container">
+          <p class="title">
+            TRACTION Toolset
+          </p>
+          <p class="subtitle">
+            The complete toolset developed for the TRACTION project
+          </p>
+        </div>
+      </section>
+    </div>
+  </section>
+{{ end }}
 
+{{ define "main" }}
   <div class="content">
     {{ .Content }}
   </div>

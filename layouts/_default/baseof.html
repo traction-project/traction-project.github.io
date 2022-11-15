@@ -22,6 +22,8 @@
   <body>
     {{ partial "menu.html" }}
 
+    {{ block "hero" . }}{{ end }}
+
     <section class="section">
       <div class="container">
         {{ block "main" . }}{{ end }}

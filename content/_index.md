@@ -1,7 +1,6 @@
 +++
 title = "TRACTION Toolset"
 +++
-## The complete toolset developed for the TRACTION project
 
 This wiki presents the **TRACTION toolset**, which is a collection of software applications for co-creation, dissemination, streaming, viewing and storing opera content. The TRACTION toolset has been developed and tested in the [**TRACTION project**](https://traction-project.eu), which provides a bridge between opera professionals and specific communities at risk of exclusion based on trials, understood as experimental attempts, to foster an effective community dialogue between diverse individuals and collectives. The toolset was employed in three trials: one in inner-city Barcelona, a youth prison in Leiria (Portugal) and diverse communities across Ireland, as experimental activities to test and share new ideas through opera co-creation. The toolset consists of the following tools:
 
