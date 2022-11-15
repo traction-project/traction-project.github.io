@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Face and Object Recognition Module for Co-Creation Space on TRACTION Toolset</title>
+    <link>http://traction-project.github.io/face-and-object-recognition/</link>
+    <description>Recent content in Face and Object Recognition Module for Co-Creation Space on TRACTION Toolset</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://traction-project.github.io/face-and-object-recognition/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/face-and-object-recognition/footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/face-and-object-recognition/footer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/face-and-object-recognition/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/face-and-object-recognition/readme/</guid>
+      <description>Installation Follow the instructions at https://pytorch.org/ to install PyTorch for your system using ether conda or pip. If you have a CUDA compatible graphics card, ensure to install a CUDA comparible version of PyTorch to allow the deep models to run on the GPU.
+To install the facerec package and facetool console script, run:
+pip install . This will install the facetool script on your environment path.
+Co-Creation Space Integration The facerecdb.</description>
+    </item>
+    
+    <item>
+      <title>Face and Object Recognition Module for Co-Creation Space</title>
+      <link>http://traction-project.github.io/face-and-object-recognition/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/face-and-object-recognition/header/</guid>
+      <description>Description The Face and Object Recognition Module for Co-Creation Space contains neural networks capable of generating automatic tags based on face and object recognition for content filtering in the Co-Creation Space.
+Deployment </description>
+    </item>
+    
+  </channel>
+</rss>

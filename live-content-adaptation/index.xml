@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Live Content Adaptation on TRACTION Toolset</title>
+    <link>http://traction-project.github.io/live-content-adaptation/</link>
+    <description>Recent content in Live Content Adaptation on TRACTION Toolset</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://traction-project.github.io/live-content-adaptation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/live-content-adaptation/footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/live-content-adaptation/footer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/live-content-adaptation/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/live-content-adaptation/readme/</guid>
+      <description>Setup The TRACTION Live Content Adaptation Algorithm is deployed with the WebRTC. The deployment was done using Janus WebRTC server. The algorithm is implemented in /LiveContentAdaptation/src. The algorithm make use of the videoroom plugin of Janus. The file containing the algorithm&amp;rsquo;s logic is streamadapt.js. To use the Live Content Adaptation Algorithm, first you need to setup a Janus WebRTC server. The Admin/Monitor APIs should be enabled at the Janus WebRTC server.</description>
+    </item>
+    
+    <item>
+      <title>Live Content Adaptation</title>
+      <link>http://traction-project.github.io/live-content-adaptation/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/live-content-adaptation/header/</guid>
+      <description>Description The Live Content Adaptation solution contains a Web-RTC web player with adaptation of multiple real-time 2D video streams.
+The Live Content Adaptation Algorithm for the TRACTION EU-project is used to select the appropriate video resolution and bitrates during live content streaming to guarantee viewers’ good QoE. The algorithm considers different network condition parameters such as bandwidth, packet loss, and jitter. Further, the algorithm tries to ensure the highest bitrate for audio, this is a key feature for performing and viewing opera arts pieces, while adapting the video quality given the bandwidth constraints.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TRACTION Toolset</title>
+    <link>http://traction-project.github.io/</link>
+    <description>Recent content on TRACTION Toolset</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://traction-project.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/co-creation-space/footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/co-creation-space/footer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/co-creation-space/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/co-creation-space/readme/</guid>
+      <description>Prerequisites The app uses the yarn version 1 (https://classic.yarnpkg.com), so make sure to install it before you get going. Moreover, make sure to install Docker and docker-compose (usually comes packaged with Docker) for running the system on your local machine
+Tunnelling The application makes use of Amazon SNS (Simple Notification Service) to be notified about asynchronous events (such as status updates about video processing). In order to receive messages, the application needs to subscribe to the SNS channel using a public names where it is reachable.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/co-creation-stage/footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/co-creation-stage/footer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/co-creation-stage/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/co-creation-stage/readme/</guid>
+      <description>Dependencies The deployment of the tool requires to have installed:
+Nodejs v14.18.1 Npm Docker-ce Docker-compose (Optional) AWS Account Ports The CoCreationStage is composed of many services that use the following ports:
+443 (reverse proxy) 80 8080 (motion) 8082 (orkestra-server) 3001 (encoding api) 8089,8989 (janus, webrtc gateway) Deployment Clone the project repository:
+git clone git@github.com:traction-project/CoCreationStage.git cd CoCreationStage The application uses several services and servers. These servers run inside Docker containers. So first of all, we need to download the docker images from here.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/encoding-api/footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/encoding-api/footer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/encoding-api/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/encoding-api/readme/</guid>
+      <description>Setup In order to run the application, a JSON file containing AWS credentials called aws.json needs to be placed in the application root. The file must have the following structure:
+{ &amp;quot;accessKeyId&amp;quot;: &amp;quot;[YOUR_ACCESS_KEY]&amp;quot;, &amp;quot;secretAccessKey&amp;quot;: &amp;quot;[YOUR_SECRET_KEY]&amp;quot;, &amp;quot;region&amp;quot;: &amp;quot;[AWS_REGION]&amp;quot; } Further, the file .env-sample needs to be renamed to .env and the following values need to be filled in:
+SESSION_SECRET a string of random characters that is used to sign the JSON Web Tokens BUCKET_NAME the name of the S3 bucket that the files should be uploaded to ETS_PIPELINE the ID of the Elastic Transcoder pipeline used to transcode uploaded media files.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/face-and-object-recognition/footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/face-and-object-recognition/footer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/face-and-object-recognition/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/face-and-object-recognition/readme/</guid>
+      <description>Installation Follow the instructions at https://pytorch.org/ to install PyTorch for your system using ether conda or pip. If you have a CUDA compatible graphics card, ensure to install a CUDA comparible version of PyTorch to allow the deep models to run on the GPU.
+To install the facerec package and facetool console script, run:
+pip install . This will install the facetool script on your environment path.
+Co-Creation Space Integration The facerecdb.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/immersive-adaptive-player/footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/immersive-adaptive-player/footer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/immersive-adaptive-player/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/immersive-adaptive-player/readme/</guid>
+      <description>Deployment Needed for installation:
+Apache Tomcat How to use run the player with Apache Tomcat (some steps and directories may vary using XAMPP for Windows):
+Run C:\apache-tomcat\bin\startup.bat Open C:\apache-tomcat\webapps folder Copy the ImmersiveAdaptivePlayer folder into webapps folder (make sure the folder is named ImmersiveAdaptivePlayer, with no other characters and respecting the letters in capital) Your directory must be webapps\ImmersiveAdaptivePlayer\all-folders-files. Make sure there is not a subfolder also called ImmersiveAdaptivePlayer. Open a browser and type: &amp;ldquo;your_apache_server_address:portnumber&amp;rdquo;/ImmersiveAdaptivePlayer/ (portnumber is usually 8080 with Tomcat) Built With IMSC_360.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/live-content-adaptation/footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/live-content-adaptation/footer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/live-content-adaptation/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/live-content-adaptation/readme/</guid>
+      <description>Setup The TRACTION Live Content Adaptation Algorithm is deployed with the WebRTC. The deployment was done using Janus WebRTC server. The algorithm is implemented in /LiveContentAdaptation/src. The algorithm make use of the videoroom plugin of Janus. The file containing the algorithm&amp;rsquo;s logic is streamadapt.js. To use the Live Content Adaptation Algorithm, first you need to setup a Janus WebRTC server. The Admin/Monitor APIs should be enabled at the Janus WebRTC server.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/pre-recorded-content-adaptation/footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/pre-recorded-content-adaptation/footer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/pre-recorded-content-adaptation/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/pre-recorded-content-adaptation/readme/</guid>
+      <description>Setup The TRACTION Pre Recorded Content Adaptation Algorithm is deployed within the dash.js reference player under /PreRecordedContentAdaptation/src/streaming/rules/abr. The file containing the algorithm&amp;rsquo;s logic is PadaRule.js.
+To use the Pre-Recorded Content Adaptation Algorithm, first you need to create a video element on your html file. Make sure the controls attribute is present.
+&amp;lt;video id=&amp;#34;videoPlayer&amp;#34; controls&amp;gt;&amp;lt;/video&amp;gt; Add dash.all.min.js to the end of the body.
+&amp;lt;body&amp;gt; ... &amp;lt;script src=&amp;#34;yourPathToDash/dash.all.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; Now, create a MediaPlayer and initialise it.</description>
+    </item>
+    
+    <item>
+      <title>Co-Creation Space</title>
+      <link>http://traction-project.github.io/co-creation-space/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/co-creation-space/header/</guid>
+      <description>Description The Co-Creation Space is a web-based platform which acts as a media repository and collaborative tool for upload, visualisation and communication around media objects. This video contains an introduction to the Co-Creation Space:
+User Documentation Tutorial 1 This video presents instructions for signing up, editing profiles (e-mail, password, language, groups and topics of interest), searching and filtering content, creating, reacting, commenting and liking posts, and finally, viewing notifications.
+Tutorial 2 This video presents instructions for adding posts to the favourites list, following other users, creating media collections, drafting posts, highlighting videos/images and drawing on images signing up, editing colour themes and group permissions.</description>
+    </item>
+    
+    <item>
+      <title>Co-Creation Stage</title>
+      <link>http://traction-project.github.io/co-creation-stage/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/co-creation-stage/header/</guid>
+      <description>Description The Co-Creation Stage is a web-based tool that supports both live and on-demand media to enable art professionals and individuals from the TRACTION&amp;rsquo;s targeted communities to remotely collaborate and to produce engaging and immersive opera shows. The video below contains an introduction to the Co-Creation Stage:
+User Documentation Tutorial 1 This video presents instructions to create a template for a show managed by the Co-Creation Stage, specifying and configuring the needed locations, devices, users and contents for the show.</description>
+    </item>
+    
+    <item>
+      <title>Encoding API for Co-Creation Stage</title>
+      <link>http://traction-project.github.io/encoding-api/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/encoding-api/header/</guid>
+      <description>Description The Encoding API for Co-Creation Stage is a self-contained Express application for uploading media files to AWS S3 and starting Elastic Transcoder encoding jobs. This is a self-contained version of the API found in the Co-Creation Space and can be deployed with a minimal amount of dependencies
+Deployment </description>
+    </item>
+    
+    <item>
+      <title>Face and Object Recognition Module for Co-Creation Space</title>
+      <link>http://traction-project.github.io/face-and-object-recognition/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/face-and-object-recognition/header/</guid>
+      <description>Description The Face and Object Recognition Module for Co-Creation Space contains neural networks capable of generating automatic tags based on face and object recognition for content filtering in the Co-Creation Space.
+Deployment </description>
+    </item>
+    
+    <item>
+      <title>Immersive Adaptive Player</title>
+      <link>http://traction-project.github.io/immersive-adaptive-player/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/immersive-adaptive-player/header/</guid>
+      <description>Description The Immersive Adaptive Player is a web-based 360° video player with support to existing and novel adaptive DASH algorithms with audio prioritization, ambisonics support and accessibility features. This player extends the ImAc Player developed in the EU H2020 ImAc project.
+User Documentation This video introduces the Immersive Adaptive Player and presents instructions for changing accessibility settings and video playback options.
+Deployment </description>
+    </item>
+    
+    <item>
+      <title>Live Content Adaptation</title>
+      <link>http://traction-project.github.io/live-content-adaptation/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/live-content-adaptation/header/</guid>
+      <description>Description The Live Content Adaptation solution contains a Web-RTC web player with adaptation of multiple real-time 2D video streams.
+The Live Content Adaptation Algorithm for the TRACTION EU-project is used to select the appropriate video resolution and bitrates during live content streaming to guarantee viewers’ good QoE. The algorithm considers different network condition parameters such as bandwidth, packet loss, and jitter. Further, the algorithm tries to ensure the highest bitrate for audio, this is a key feature for performing and viewing opera arts pieces, while adapting the video quality given the bandwidth constraints.</description>
+    </item>
+    
+    <item>
+      <title>Pre-Recorded Content Adaptation</title>
+      <link>http://traction-project.github.io/pre-recorded-content-adaptation/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/pre-recorded-content-adaptation/header/</guid>
+      <description>Description The Pre-Recorded Content Adaptation solution contains a DASH-based 2D web player and a novel audio-prioritised adaptation solution for 2D content streaming.
+The Pre-Recorded Content Adaptation Algorithm for the TRACTION EU-project is used to select the appropriate bitrates during on-demand content streaming to guarantee viewers’ good QoE. It considers differents parameters such as bandwidth, buffer level, quality variation, and stream priority. It tries to ensure the highest bitrate for audio, a key feature for performing arts pieces (opera in particular), while adapting the video quality given the bandwidth constraints.</description>
+    </item>
+    
+  </channel>
+</rss>

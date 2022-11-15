@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pre-Recorded Content Adaptation on TRACTION Toolset</title>
+    <link>http://traction-project.github.io/pre-recorded-content-adaptation/</link>
+    <description>Recent content in Pre-Recorded Content Adaptation on TRACTION Toolset</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://traction-project.github.io/pre-recorded-content-adaptation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/pre-recorded-content-adaptation/footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/pre-recorded-content-adaptation/footer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/pre-recorded-content-adaptation/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/pre-recorded-content-adaptation/readme/</guid>
+      <description>Setup The TRACTION Pre Recorded Content Adaptation Algorithm is deployed within the dash.js reference player under /PreRecordedContentAdaptation/src/streaming/rules/abr. The file containing the algorithm&amp;rsquo;s logic is PadaRule.js.
+To use the Pre-Recorded Content Adaptation Algorithm, first you need to create a video element on your html file. Make sure the controls attribute is present.
+&amp;lt;video id=&amp;#34;videoPlayer&amp;#34; controls&amp;gt;&amp;lt;/video&amp;gt; Add dash.all.min.js to the end of the body.
+&amp;lt;body&amp;gt; ... &amp;lt;script src=&amp;#34;yourPathToDash/dash.all.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; Now, create a MediaPlayer and initialise it.</description>
+    </item>
+    
+    <item>
+      <title>Pre-Recorded Content Adaptation</title>
+      <link>http://traction-project.github.io/pre-recorded-content-adaptation/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/pre-recorded-content-adaptation/header/</guid>
+      <description>Description The Pre-Recorded Content Adaptation solution contains a DASH-based 2D web player and a novel audio-prioritised adaptation solution for 2D content streaming.
+The Pre-Recorded Content Adaptation Algorithm for the TRACTION EU-project is used to select the appropriate bitrates during on-demand content streaming to guarantee viewers’ good QoE. It considers differents parameters such as bandwidth, buffer level, quality variation, and stream priority. It tries to ensure the highest bitrate for audio, a key feature for performing arts pieces (opera in particular), while adapting the video quality given the bandwidth constraints.</description>
+    </item>
+    
+  </channel>
+</rss>

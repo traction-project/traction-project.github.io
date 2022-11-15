@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Encoding API for Co-Creation Stage on TRACTION Toolset</title>
+    <link>http://traction-project.github.io/encoding-api/</link>
+    <description>Recent content in Encoding API for Co-Creation Stage on TRACTION Toolset</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://traction-project.github.io/encoding-api/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/encoding-api/footer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/encoding-api/footer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://traction-project.github.io/encoding-api/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/encoding-api/readme/</guid>
+      <description>Setup In order to run the application, a JSON file containing AWS credentials called aws.json needs to be placed in the application root. The file must have the following structure:
+{ &amp;quot;accessKeyId&amp;quot;: &amp;quot;[YOUR_ACCESS_KEY]&amp;quot;, &amp;quot;secretAccessKey&amp;quot;: &amp;quot;[YOUR_SECRET_KEY]&amp;quot;, &amp;quot;region&amp;quot;: &amp;quot;[AWS_REGION]&amp;quot; } Further, the file .env-sample needs to be renamed to .env and the following values need to be filled in:
+SESSION_SECRET a string of random characters that is used to sign the JSON Web Tokens BUCKET_NAME the name of the S3 bucket that the files should be uploaded to ETS_PIPELINE the ID of the Elastic Transcoder pipeline used to transcode uploaded media files.</description>
+    </item>
+    
+    <item>
+      <title>Encoding API for Co-Creation Stage</title>
+      <link>http://traction-project.github.io/encoding-api/header/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://traction-project.github.io/encoding-api/header/</guid>
+      <description>Description The Encoding API for Co-Creation Stage is a self-contained Express application for uploading media files to AWS S3 and starting Elastic Transcoder encoding jobs. This is a self-contained version of the API found in the Co-Creation Space and can be deployed with a minimal amount of dependencies
+Deployment </description>
+    </item>
+    
+  </channel>
+</rss>

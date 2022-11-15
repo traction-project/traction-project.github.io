@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TRACTION Toolset</title>
+    <link rel="icon" type="image/x-icon" href="http://traction-project.github.io/images/cropped-Favicon-02-32x32.png">
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <script src="http://traction-project.github.io/scripts/prettify/prettify.js"></script>
+    <script src="http://traction-project.github.io/scripts/prettify/lang-css.js"></script>
+    <script src="http://traction-project.github.io/scripts/navbar_menu.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link type="text/css" rel="stylesheet" href="http://traction-project.github.io/styles/prettify-tomorrow.css">
+    <link rel="stylesheet" href="http://traction-project.github.io/styles/style.css" />
+  </head>
+  <body>
+    
+
+
+
+
+
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="http://traction-project.github.io/">
+      <img src="http://traction-project.github.io/images/Traction-02.png">
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item " href="http://traction-project.github.io/">
+        Home
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link ">
+          Co-Creation Space
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="http://traction-project.github.io/co-creation-space">
+            Co-Creation Space
+          </a>
+          <a class="navbar-item" href="http://traction-project.github.io/face-and-object-recognition">
+            Face and Object Recognition
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link is-active">
+          Co-Creation Stage
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="http://traction-project.github.io/co-creation-stage">
+            Co-Creation Stage
+          </a>
+          <a class="navbar-item" href="http://traction-project.github.io/encoding-api">
+            Encoding API for Co-Creation Stage
+          </a>
+          <a class="navbar-item" href="http://traction-project.github.io/pre-recorded-content-adaptation">
+            Pre-Recorded Content Adaptation
+          </a>
+          <a class="navbar-item" href="http://traction-project.github.io/live-content-adaptation">
+            Live Content Adaptation
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link ">
+          Immersive Experiences
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="http://traction-project.github.io/social-vr">
+            Social VR
+          </a>
+          <a class="navbar-item" href="http://traction-project.github.io/immersive-adaptive-player">
+            Immsersive Adaptive Player
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    
+
+    <section class="section">
+      <div class="container">
+        
+          <nav class="breadcrumb" aria-label="breadcrumbs">
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li class="is-active"><a href="#" aria-current="page">Encoding API for Co-Creation Stage</a></li>
+            </ul>
+          </nav>
+        
+
+        
+  <h2 class="title is-2">Encoding API for Co-Creation Stage</h2>
+
+  <hr/>
+
+  <div class="columns">
+    <div class="column is-4">
+      <h4 class="title is-4">Table of Contents</h4>
+
+      <div class="content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#deployment">Deployment</a>
+      <ul>
+        <li><a href="#setup">Setup</a></li>
+        <li><a href="#adding-user-accounts">Adding User Accounts</a></li>
+        <li><a href="#custom-encoding-presets">Custom Encoding Presets</a></li>
+        <li><a href="#api-documentation">API Documentation</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+
+      
+        <div class="block">
+          <a href="https://github.com/traction-project/encoding-api" target="_blank" class="button">
+            <span class="icon">
+              <i class="fab fa-github"></i>
+            </span>
+            <span>GitHub Repository</span>
+          </a>
+        </div>
+      
+    </div>
+    <div class="column is-4">
+      <h4 class="title is-4">Contact</h4>
+      <div class="block">
+        
+  
+    
+    Please contact <a href="mailto:t.roggla@cwi.nl">Thomas Röggla</a> for more information about the Co-Creation Space.
+  
+
+
+      </div>
+      <h4 class="title is-4">License</h4>
+      <div class="block">
+        
+          All code and documentation is licensed by the original authors and contributors under the
+          <a href="https://github.com/traction-project/encoding-api/blob/master/LICENSE">BSD-2-Clause license</a>.
+        
+      </div>
+    </div>
+    
+  </div>
+
+  <hr/>
+
+  <div class="content">
+    <h2 id="description">Description</h2>
+<p>The Encoding API for Co-Creation Stage is a self-contained Express application for uploading media files to AWS S3 and starting Elastic Transcoder encoding jobs. This is a self-contained version of the API found in the Co-Creation Space and can be deployed with a minimal amount of dependencies</p>
+<h2 id="deployment">Deployment</h2>
+<h3 id="setup">Setup</h3>
+<p>In order to run the application, a JSON file containing AWS credentials called
+<code>aws.json</code> needs to be placed in the application root. The file must have the
+following structure:</p>
+<pre><code>{
+  &quot;accessKeyId&quot;: &quot;[YOUR_ACCESS_KEY]&quot;,
+  &quot;secretAccessKey&quot;: &quot;[YOUR_SECRET_KEY]&quot;,
+  &quot;region&quot;: &quot;[AWS_REGION]&quot;
+}
+</code></pre>
+<p>Further, the file <code>.env-sample</code> needs to be renamed to <code>.env</code> and the following
+values need to be filled in:</p>
+<ul>
+<li><code>SESSION_SECRET</code> a string of random characters that is used to sign the JSON
+Web Tokens</li>
+<li><code>BUCKET_NAME</code> the name of the S3 bucket that the files should be uploaded to</li>
+<li><code>ETS_PIPELINE</code> the ID of the Elastic Transcoder pipeline used to transcode
+uploaded media files. NB: Make sure to supply the ID of the pipeline and not
+the name</li>
+</ul>
+<h4 id="development-builds">Development Builds</h4>
+<p>For development, make sure you have <code>docker</code>, <code>node</code> and <code>yarn</code> installed.
+Build and start the container as such:</p>
+<pre><code>docker compose build
+docker compose up -d
+</code></pre>
+<p>Because the application bundle is mounted inside the container from the host
+machine, it needs to be built as well. This is done as follows:</p>
+<pre><code>yarn install
+yarn build
+</code></pre>
+<p>After any change to the code, <code>yarn build</code> needs to be run in order to refresh
+the compiled bundle. Also <code>docker compose restart web</code> should be run to ensure
+the application is restarted using the new bundle.</p>
+<p>The application itself is now available on port 3001.</p>
+<h4 id="production-builds">Production Builds</h4>
+<p>There is a separate Docker Compose config file for production environments
+named <code>docker-compose.production.yml</code>. This does not require compiling the
+bundle locally and is thus ideal for deployment environments or if there is no
+intention of changing the code. To build such a production image, invoke Docker
+Compose as such:</p>
+<pre><code>docker compose -f docker-compose.production.yml build
+docker compose -f docker-compose.production.yml up -d
+</code></pre>
+<p>This image is completely self-contained (except for <code>.env</code> and <code>aws.json</code>) and
+can also easily be deployed in a Docker Swarm environment.</p>
+<h3 id="adding-user-accounts">Adding User Accounts</h3>
+<p>The application uses SQLite to manage user accounts. Initially, the database is
+empty, but new user accounts can be added using the script <code>register.js</code>.</p>
+<p>In order to run this script, ensure the container is running and invoke the
+following command from the command line:</p>
+<pre><code>docker compose exec web yarn register
+</code></pre>
+<p>The script will ask for a new username and a password. The selected values are
+inserted into the database and can then be used to log into the API and obtain
+a JSON Web Token for all further calls. The obtained token is valid for 60
+days.</p>
+<p>NB: The script will fail if the chosen username already exists, i.e. usernames
+must be unique.</p>
+<h3 id="custom-encoding-presets">Custom Encoding Presets</h3>
+<p>By default, the application supports the resolutions <code>720p</code>, <code>480p</code>, <code>360p</code> and
+<code>240p</code>. One can, however, add custom encoding presets by creating them in the
+Transcoder preset config menu on AWS and adding their preset IDs to a file
+named <code>presets.json</code> in the application root. A sample file with custom presets
+named <code>presets.json-sample</code> is provided.</p>
+<p>The file contains a JSON dictionary, with the keys being unique, descriptive
+names, e.g. denoting the resolution that the preset produces. Each key is
+associated to its corresponding preset ID.</p>
+<p>Once added, the application should be restarted. The availability of the custom
+presets can be verified by calling <code>GET /api/upload/encode/resolutions</code>.</p>
+<h3 id="api-documentation">API Documentation</h3>
+<p>The following sections document each of the API endpoints that the application
+supplies in order to facilitate media upload and encoding. This documentation
+can also be used as a specification to implement alternative APIs, e.g. ones
+that do not rely on external cloud services.</p>
+<p>NB: The <code>Content-Type</code> header of requests which send data should be set to
+<code>application/json</code> to ensure that the request is interpreted quickly. This
+does not apply to <code>/api/upload/raw</code>.</p>
+<p>Please refer to the script <code>example.py</code>, which illustrates a sample interaction
+with the API, including login, file upload, starting of a transcoding job,
+checking of job status and finally deleting the originally uploaded file. In
+order to run the script, the package <code>requests</code> has to be installed.</p>
+<h4 id="obtaining-a-token">Obtaining a Token</h4>
+<p>In order to interact with the API, the caller is required to supply a JSON Web
+Token along with each request. This token can be obtained by calling the route
+<code>/api/login</code> with a valid user account. Refer to the previous section on how to
+add new user accounts. The endpoint expects the parameters <code>username</code> and
+<code>password</code> inside a JSON dictionary in the body of the request:</p>
+<pre><code>POST /api/login
+Content-Type: application/json
+
+{ &quot;username&quot;: &quot;test&quot;, &quot;password&quot;: &quot;test&quot; }
+</code></pre>
+<p>Upon successful login, the API returns a JSON dictionary containing the keys
+<code>_id</code>, <code>username</code> and <code>token</code>. The value of <code>token</code> should then be used to
+authenticate requests to any other endpoint.</p>
+<h4 id="uploading-a-file">Uploading a File</h4>
+<p>The endpoint <code>/api/upload/raw</code> serves to upload files to the associated S3
+bucket. The file should be submitted in the body of a <code>multipart/form-data</code>
+request under the key <code>file</code>. Also take note of the presence of the previously
+obtained token in the <code>Authorization</code> header.</p>
+<pre><code>POST /api/upload/raw
+Authorization: Bearer [TOKEN]
+Content-Type: multipart/form-data; charset=utf-8; boundary=__BOUNDARY__
+
+--__BOUNDARY__
+Content-Disposition: form-data; name=&quot;file&quot;; filename=&quot;example.mp4&quot;
+
+[FILE_CONTENTS]
+--__BOUNDARY__--
+</code></pre>
+<p>A request like this can be executed in <code>curl</code> as such:</p>
+<pre><code>curl -v -XPOST --header &quot;Authorization: Bearer [TOKEN]&quot; -F file=@[PATH_TO_FILE] http://example.com/api/upload/raw
+</code></pre>
+<p>Upon success, the call with return a JSON dictionary containing  the path to
+the newly uploaded file under the key <code>name</code>.</p>
+<h4 id="deleting-uploaded-files">Deleting Uploaded Files</h4>
+<p>Previously uploaded files can be deleted by calling <code>/api/upload/raw</code> with the
+verb HTTP <code>DELETE</code>, supplying the path to the file to be deleted under the key
+<code>key</code> in the JSON request body.</p>
+<pre><code>DELETE /api/upload/raw
+Authorization: Bearer [TOKEN]
+Content-Type: application/json
+
+{ &quot;key&quot;: &quot;[PATH_TO_FILE_ON_S3]&quot; }
+</code></pre>
+<h4 id="retrieving-available-resolutions">Retrieving Available Resolutions</h4>
+<p>The endpoint for starting new transcoding jobs offers a parameter which allows
+one to specify the desired output resolutions. This endpoint allows the caller
+to retrieve a list of available output resolutions. The resolutions <code>720p</code>,
+<code>480p</code>, <code>360p</code> and <code>240p</code> are always available. Also refer to the section
+about adding custom presets for more information.</p>
+<pre><code>GET /api/upload/encode/resolutions
+Authorization: Bearer [TOKEN]
+</code></pre>
+<p>A JSON data structure with the key <code>resolutions</code> is returned which contains a
+list of supported resolutions for the transcoding job.</p>
+<h4 id="starting-a-transcoding-job">Starting a Transcoding Job</h4>
+<p>In order to start a DASH transcoding job for an uploaded video or audio file,
+a request to the endpoint <code>/api/upload/encode</code> has to be made. The endpoint
+expects the key <code>input</code> containing the path to the file to be encoded in the
+JSON body of the request.</p>
+<p>Optionally, a list of desired output resolutions can be submitted as an array.
+A list of available resolutions can be retrieved by calling the endpoint
+<code>/api/upload/encode/resolutions</code>. If the parameter is omitted, the file is
+encoded to <code>720p</code>, <code>480p</code> and <code>360p</code> by default.</p>
+<p>Also note, if a video file which does not contain an audio track is to be
+encoded, the option <code>hasAudio</code> set to <code>false</code> has to be passed in the request
+body. Otherwise the encoding will fail. If omitted, <code>hasAudio</code> defaults to
+<code>true</code>.</p>
+<pre><code>POST /api/upload/encode
+Authorization: Bearer [TOKEN]
+Content-Type: application/json
+
+{ &quot;input&quot;: &quot;[PATH_TO_FILE_ON_S3]&quot;, &quot;resolutions&quot;: [&quot;1080p&quot;, &quot;360p&quot;] }
+</code></pre>
+<p>If an unknown resolution is passed, it will be ignored. Upon success, the
+response will contain the job ID of the newly started transcoding job under the
+key <code>jobId</code> in the JSON response body.</p>
+<h4 id="checking-transcoding-job-status">Checking Transcoding Job Status</h4>
+<p>To check the status of a started transcoding job, the API supplies the endpoint
+<code>/api/upload/encode/status/:jobId</code>, where <code>:jobID</code> is the job ID of a
+transcoding job.</p>
+<pre><code>GET /api/upload/encode/status/[JOB_ID]
+Authorization: Bearer [TOKEN]
+</code></pre>
+<p>The request will return the current status of the transcoding job with the
+specified ID. The key <code>jobStatus</code> will contain one of <code>Submitted</code>,
+<code>Progressing</code>, <code>Complete</code>, <code>Canceled</code> or <code>Error</code>. If the value of <code>jobStatus</code>
+is equal to <code>Complete</code>, the response will also contain the key <code>manifest</code>,
+which contains the path to the DASH manifest that can be used to play back the
+encoded media file.</p>
+
+  </div>
+
+      </div>
+    </section>
+  </body>
+</html>
