@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="{{ (resources.Get "styles/style.sass" | resources.ToCSS).Permalink }}" />
   </head>
   <body>
-    {{ partial "menu.html" }}
+    {{ partial "menu.html" . }}
 
     {{ if .IsHome }}
       {{ block "hero" . }}{{ end }}

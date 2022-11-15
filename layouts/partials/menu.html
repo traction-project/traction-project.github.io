@@ -1,3 +1,9 @@
+{{ $page := trim .Page.RelPermalink "/" }}
+
+{{ $spaceSubpages := slice "co-creation-space" "face-and-object-recognition" }}
+{{ $stageSubpages := slice "co-creation-stage" "encoding-api" "pre-recorded-content-adaptation" "live-content-adaptation" }}
+{{ $immersiveSubpages := slice "social-vr" "immersive-adaptive-player" }}
+
 <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="{{ absURL "/" }}">
@@ -13,12 +19,12 @@
 
   <div id="navbarBasicExample" class="navbar-menu">
     <div class="navbar-start">
-      <a class="navbar-item" href="{{ absURL "/" }}">
+      <a class="navbar-item {{ if eq $page "" }}is-active{{ end }}" href="{{ absURL "/" }}">
         Home
       </a>
 
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
+        <a class="navbar-link {{ if in $spaceSubpages $page }}is-active{{ end }}">
           Co-Creation Space
         </a>
 
@@ -33,7 +39,7 @@
       </div>
 
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
+        <a class="navbar-link {{ if in $stageSubpages $page }}is-active{{ end }}">
           Co-Creation Stage
         </a>
 
@@ -54,7 +60,7 @@
       </div>
 
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
+        <a class="navbar-link {{ if in $immersiveSubpages $page }}is-active{{ end }}">
           Immersive Experiences
         </a>
 
