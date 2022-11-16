@@ -7795,8 +7795,10 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 @media (max-width: 768px) {
   figure.image {
-    margin-left: 0;
-    margin-right: 0; } }
+    margin: 0 auto;
+    width: 80%; }
+  .image.is-square {
+    padding-top: 80%; } }
 
 .youtube-container {
   position: relative;
@@ -7821,4 +7823,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: #F9F9F9; }
 
 .navbar-link.is-active, .navbar-item.is-active {
-  background-color: #f17917 !important; }
+  background-color: #f17917 !important;
+  color: inherit; }
+
+.navbar-link:not(.is-arrowless)::after {
+  color: inherit;
+  border-color: inherit; }
