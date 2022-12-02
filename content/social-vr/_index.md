@@ -5,6 +5,7 @@ license = ["BSD", "https://github.com/traction-project/PreRecordedContentAdaptat
 +++
 
 ## Description
+The social VR lobby is an immersive environment that allows audience members to discuss about the opera, extend the contents by meeting the cast, and interact with some of the assets used in the performance, among others. This experience takes place in Social VR after watching the Opera performance
 
 Several social VR platforms support virtual entertainment events. However, their
 value for post-show activities remains unclear. Through a user-centered
@@ -18,7 +19,7 @@ Zone for emotional engagement** and **4) an Interactive Stage for spiritual enga
 Based on this work, we ran a series of user studies to evaluate audience
 experiences in each room to create a social VR lobby template for theatre
 experiences. After analyzing the results of the studies we decided to focus on
-only 2 rooms: **Interactive Stage** and **Photo Booth**.
+only 2 rooms: **Interactive Stage** and **Photo Booth**. In the next sections we describe these rooms.
 
 ### Interactive Stage
 
