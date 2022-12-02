@@ -1,7 +1,6 @@
 +++
 title = "Social VR Lobby"
 contacts = [["Nacho Reimat", "nacho@cwi.nl"], ["Sueyoon Lee", "sueyoon@cwi.nl"]]
-license = ["BSD", "https://github.com/traction-project/PreRecordedContentAdaptation/blob/master/LICENSE.md"]
 +++
 
 ## Description
