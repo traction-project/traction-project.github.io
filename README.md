@@ -23,10 +23,11 @@ changes. But if for some reason you want to build the page locally, first
 install the [Hugo](https://gohugo.io) static site generator and check out this
 repository.
 
-Then run the script `build.sh` to fetch the README documents from the tool
-repositories. This will fetch the READMEs, concatenate them with their
-corresponding header and footer sections from the `content/` directory and
-build the site. The generated HTML is then placed into the folder `public/`.
+Then run the script `build.sh` to download the SASS libraries and fetch the
+README documents from the tool repositories. This will fetch the READMEs,
+concatenate them with their corresponding header and footer sections from the
+`content/` directory and build the site. The generated HTML is then placed into
+the folder `public/`.
 
     bash build.sh
 
