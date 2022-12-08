@@ -6,6 +6,7 @@
 .vscode
 *.swp
 .hugo_build.lock
+assets/styles/bulma
 
 content/co-creation-space/_index.md
 content/face-and-object-recognition/_index.md

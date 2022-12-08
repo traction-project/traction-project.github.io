@@ -19,7 +19,7 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Fetch README files
+      - name: Fetch README files and install Bulma
         run: bash build.sh
 
       - name: Build page
