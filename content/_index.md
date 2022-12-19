@@ -3,7 +3,7 @@ title = "TRACTION Toolset"
 +++
 
 {{< leader >}}
-  This wiki presents the **TRACTION toolset**, which is a collection of software applications for co-creation, dissemination, streaming, viewing and storing opera content. The TRACTION toolset has been developed and tested in the [**TRACTION project**](https://traction-project.eu), which provides a bridge between opera professionals and specific communities at risk of exclusion based on trials, understood as experimental attempts, to foster an effective community dialogue between diverse individuals and collectives.
+  This wiki presents the **TRACTION toolset**, which is a collection of software applications for co-creation, dissemination, streaming, viewing and storing opera content. The TRACTION toolset has been developed and tested in the [**TRACTION project**](https://traction-project.eu), which provides a bridge between opera professionals and specific communities at risk of exclusion based on trials, understood as experimental attempts, to foster an effective community dialogue between diverse individuals and collectives. Find out more about the operas, co-creation and TRACTION by visiting our new website [**co-art.eu**](https://co-art.eu).
 {{< /leader >}}
 
 ---
