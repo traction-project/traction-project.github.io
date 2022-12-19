@@ -2,7 +2,7 @@
 title = "Co-Creation Stage"
 repo_link = "https://github.com/traction-project/CoCreationStage"
 logo = "images/ccstage.png"
-contacts = [["Ana Dominguez", "adominguez@vicomtech.org"], ["Sergio Cabrero Barros", "scabrero@vicomtech.org"]]
+contacts = [["Vicomtech", "https://vicomtech.org"], ["Mikel Zorrilla", "https://vicomtech.org/en/vicomtech/team/210"]]
 license = ["LGPL-V3", "https://github.com/traction-project/CoCreationStage/blob/master/LICENSE.LPGL"]
 aliases = ["/CoCreationStage"]
 +++

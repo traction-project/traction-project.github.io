@@ -1,6 +1,6 @@
 +++
 title = "Social VR Lobby"
-contacts = [["Nacho Reimat", "nacho@cwi.nl"], ["Sueyoon Lee", "sueyoon@cwi.nl"]]
+contacts = [["Nacho Reimat", "mailto:nacho@cwi.nl"], ["Sueyoon Lee", "mailto:sueyoon@cwi.nl"]]
 +++
 
 ## Description

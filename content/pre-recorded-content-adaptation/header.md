@@ -1,7 +1,7 @@
 +++
 title = "Pre-Recorded Content Adaptation"
 repo_link = "https://github.com/traction-project/PreRecordedContentAdaptation"
-contacts = [["Mohammed Togou", "mohammedamine.togou@dcu.ie"], ["Gabriel Muntean", "gabriel.muntean@dcu.ie"]]
+contacts = [["Mohammed Togou", "mailto:mohammedamine.togou@dcu.ie"], ["Gabriel Muntean", "mailto:gabriel.muntean@dcu.ie"]]
 license = ["BSD", "https://github.com/traction-project/PreRecordedContentAdaptation/blob/master/LICENSE.md"]
 aliases = ["/PreRecordedContentAdaptation"]
 +++
