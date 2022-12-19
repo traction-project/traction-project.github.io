@@ -22,7 +22,7 @@
       
       <guid>https://traction-project.github.io/co-creation-stage/readme/</guid>
       <description>Dependencies The deployment of the tool requires to have installed:
-Nodejs v14.18.1 Npm Docker-ce Docker-compose (Optional) AWS Account Ports The CoCreationStage is composed of many services that use the following ports:
+Nodejs v14.18.1 Npm Docker-ce Docker-compose (Optional) AWS Account Ports The Co-Creation Stage is composed of many services that use the following ports:
 443 (reverse proxy) 80 8080 (motion) 8082 (orkestra-server) 3001 (encoding api) 8089,8989 (janus, webrtc gateway) Deployment Clone the project repository:
 git clone git@github.com:traction-project/CoCreationStage.git cd CoCreationStage The application uses several services and servers. These servers run inside Docker containers. So first of all, we need to download the docker images from here.</description>
     </item>

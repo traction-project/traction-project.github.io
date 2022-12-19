@@ -41,7 +41,7 @@ Tunnelling The application makes use of Amazon SNS (Simple Notification Service)
       
       <guid>https://traction-project.github.io/co-creation-stage/readme/</guid>
       <description>Dependencies The deployment of the tool requires to have installed:
-Nodejs v14.18.1 Npm Docker-ce Docker-compose (Optional) AWS Account Ports The CoCreationStage is composed of many services that use the following ports:
+Nodejs v14.18.1 Npm Docker-ce Docker-compose (Optional) AWS Account Ports The Co-Creation Stage is composed of many services that use the following ports:
 443 (reverse proxy) 80 8080 (motion) 8082 (orkestra-server) 3001 (encoding api) 8089,8989 (janus, webrtc gateway) Deployment Clone the project repository:
 git clone git@github.com:traction-project/CoCreationStage.git cd CoCreationStage The application uses several services and servers. These servers run inside Docker containers. So first of all, we need to download the docker images from here.</description>
     </item>
@@ -204,7 +204,7 @@ Deployment </description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://traction-project.github.io/live-content-adaptation/header/</guid>
-      <description>Description The Live Content Adaptation solution contains a Web-RTC web player with adaptation of multiple real-time 2D video streams.
+      <description>Description The Live Content Adaptation solution contains a WebRTC web player with adaptation of multiple real-time 2D video streams.
 The Live Content Adaptation Algorithm for the TRACTION EU-project is used to select the appropriate video resolution and bitrates during live content streaming to guarantee viewers’ good QoE. The algorithm considers different network condition parameters such as bandwidth, packet loss, and jitter. Further, the algorithm tries to ensure the highest bitrate for audio, this is a key feature for performing and viewing opera arts pieces, while adapting the video quality given the bandwidth constraints.</description>
     </item>
     
