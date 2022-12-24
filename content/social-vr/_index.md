@@ -39,8 +39,8 @@ to discover how these changes would affect the atmosphere or the mood.
 
 The Photo Booth allows users to play with some assets that appear in the opera
 (like hats and umbrellas) and use them to take pictures with the characters or
-with a changing backgroud. It also gives them the opportunity to send these
-pictures to their real world email addresses by placing them in a virtual
+with a changing background. It also gives them the opportunity to send these
+pictures to their real-world email addresses by placing them in a virtual
 mailbox.
 
 {{<figure "PhotoBooth.jpg">}}
