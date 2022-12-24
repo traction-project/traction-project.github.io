@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://traction-project.github.io/face-and-object-recognition/readme/</guid>
-      <description>Installation Follow the instructions at https://pytorch.org/ to install PyTorch for your system using ether conda or pip. If you have a CUDA compatible graphics card, ensure to install a CUDA comparible version of PyTorch to allow the deep models to run on the GPU.
+      <description>Installation Follow the instructions at https://pytorch.org/ to install PyTorch for your system using either conda or pip. If you have a CUDA compatible graphics card, ensure to install a CUDA compatible version of PyTorch to allow the deep models to run on the GPU.
 To install the facerec package and facetool console script, run:
 pip install . This will install the facetool script on your environment path.
 Co-Creation Space Integration The facerecdb.</description>

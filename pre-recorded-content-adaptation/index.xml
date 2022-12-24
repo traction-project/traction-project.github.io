@@ -21,7 +21,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://traction-project.github.io/pre-recorded-content-adaptation/readme/</guid>
-      <description>Setup The TRACTION Pre Recorded Content Adaptation Algorithm is deployed within the dash.js reference player under /PreRecordedContentAdaptation/src/streaming/rules/abr. The file containing the algorithm&amp;rsquo;s logic is PadaRule.js.
+      <description>Setup The TRACTION Pre-Recorded Content Adaptation Algorithm is deployed within the dash.js reference player under /PreRecordedContentAdaptation/src/streaming/rules/abr. The file containing the algorithm&amp;rsquo;s logic is PadaRule.js.
 To use the Pre-Recorded Content Adaptation Algorithm, first you need to create a video element on your html file. Make sure the controls attribute is present.
 &amp;lt;video id=&amp;#34;videoPlayer&amp;#34; controls&amp;gt;&amp;lt;/video&amp;gt; Add dash.all.min.js to the end of the body.
 &amp;lt;body&amp;gt; ... &amp;lt;script src=&amp;#34;yourPathToDash/dash.all.min.js&amp;#34;&amp;gt;&amp;lt;/script&amp;gt; &amp;lt;/body&amp;gt; Now, create a MediaPlayer and initialise it.</description>

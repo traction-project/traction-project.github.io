@@ -177,7 +177,7 @@
 <p>The Pre-Recorded Content Adaptation Algorithm for the TRACTION EU-project is used to select the appropriate bitrates during on-demand content streaming to guarantee viewers’ good QoE. It considers differents parameters such as bandwidth, buffer level, quality variation, and stream priority. It tries to ensure the highest bitrate for audio, a key feature for performing arts pieces (opera in particular), while adapting the video quality given the bandwidth constraints. This is because many studies have shown that ensuring high audio quality can have a positive impact on viewers&rsquo; QoE.</p>
 <h2 id="deployment">Deployment</h2>
 <h3 id="setup">Setup</h3>
-<p>The TRACTION Pre Recorded Content Adaptation Algorithm is deployed within the <!-- raw HTML omitted -->dash.js reference player<!-- raw HTML omitted --> under <code>/PreRecordedContentAdaptation/src/streaming/rules/abr</code>. The file containing the algorithm&rsquo;s logic is <code>PadaRule.js</code>.</p>
+<p>The TRACTION Pre-Recorded Content Adaptation Algorithm is deployed within the <!-- raw HTML omitted -->dash.js reference player<!-- raw HTML omitted --> under <code>/PreRecordedContentAdaptation/src/streaming/rules/abr</code>. The file containing the algorithm&rsquo;s logic is <code>PadaRule.js</code>.</p>
 <p>To use the Pre-Recorded Content Adaptation Algorithm, first you need to create a video element on your html file. Make sure the controls attribute is present.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">video</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;videoPlayer&#34;</span> <span style="color:#a6e22e">controls</span>&gt;&lt;/<span style="color:#f92672">video</span>&gt;
 </span></span></code></pre></div><p>Add dash.all.min.js to the end of the body.</p>
@@ -237,7 +237,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">quality</span>     <span style="color:#f92672">=</span> <span style="color:#a6e22e">player</span>.<span style="color:#a6e22e">getQualityFor</span>(<span style="color:#e6db74">&#39;type&#39;</span>);
 </span></span></code></pre></div><p><code>type</code> denotes the segment type (i.e., video, audio). These metrics along with others can help assess the adaptation algorithm.</p>
 <h3 id="adding-modifying-the-pre-recorded-content-adaptation-algorithm">Adding/ modifying the Pre-Recorded Content Adaptation Algorithm</h3>
-<p>To be able to add or modify <code>PadaRule.js</code>, you need to do the follwoing steps:</p>
+<p>To be able to add or modify <code>PadaRule.js</code>, you need to do the following steps:</p>
 <ol>
 <li>Install <a href="http://nodejs.org/">node.js</a>.</li>
 <li>Checkout the project repository (<code>git clone https://github.com/traction-project/PreRecordedContentAdaptation.git</code>).</li>
@@ -266,7 +266,7 @@
           &copy; 2022 <a href="https://traction-project.eu">TRACTION Project</a>.<br/>
           This site is licensed under the <a href="https://github.com/traction-project/traction-project.github.io/tree/master/LICENSE">BSD license</a>.<br/>
           <br/>
-          <i>Last update: 2022-12-19</i>
+          <i>Last update: 2022-12-24</i>
         </p>
       </div>
     </footer>
